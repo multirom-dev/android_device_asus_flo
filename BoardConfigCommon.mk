@@ -149,3 +149,9 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 HAVE_SELINUX := true
 BUILD_LZMA_RD := true
 
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/asus/flo/mr_init_devices.c
+MR_RD_ADDR := 0x81800000
+MR_DPI := xhdpi
+MR_FSTAB := device/asus/flo/twrp.fstab
