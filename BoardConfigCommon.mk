@@ -132,3 +132,5 @@ MR_RD_ADDR := 0x82500000
 MR_DPI := xhdpi
 MR_FSTAB := device/asus/flo/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
+
+BUILD_OLD_SYS_PROPS := true
