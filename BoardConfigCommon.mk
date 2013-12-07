@@ -105,9 +105,12 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 HAVE_ADRENO_SOURCE:= false
 
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/flo/custombootimg.mk
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 #TWRP config:
-DEVICE_RESOLUTION := 1080x1920
+DEVICE_RESOLUTION := 1200x1920
+LANDSCAPE_RESOLUTION := 1920x1200
+TW_DEFAULT_ROTATION := 0
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_USB_STORAGE := true
@@ -121,3 +124,11 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.591617/leds/lcd-backlight/bri
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/asus/flo/mr_init_devices.c
+MR_RD_ADDR := 0x82500000
+MR_DPI := xhdpi
+MR_FSTAB := device/asus/flo/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
