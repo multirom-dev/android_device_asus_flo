@@ -104,6 +104,8 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 HAVE_ADRENO_SOURCE:= false
 
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/flo/custombootimg.mk
+
 #TWRP config:
 DEVICE_RESOLUTION := 1080x1920
 BOARD_HAS_NO_REAL_SDCARD := true
