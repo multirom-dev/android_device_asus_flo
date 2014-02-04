@@ -20,8 +20,7 @@ const char *mr_init_devices[] =
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
 
-    "/sys/devices/platform/gpio-keys.0/input/input5",
-    "/sys/devices/platform/gpio-keys.0/input/input5/event5/",
+    "/sys/devices/platform/gpio-keys.0/input*",
     "/sys/devices/virtual/input*",
 
     // for adb
