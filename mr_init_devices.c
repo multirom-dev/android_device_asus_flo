@@ -34,5 +34,8 @@ const char *mr_init_devices[] =
     // USB drive is in here
     "/sys/devices/platform/msm_hsusb_host*",
 
+    // for qualcomm overlay - /dev/ion
+    "/sys/devices/virtual/misc/ion",
+
     NULL
 };
