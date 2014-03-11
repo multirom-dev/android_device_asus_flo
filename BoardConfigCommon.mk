@@ -134,6 +134,3 @@ MR_FSTAB := device/asus/flo/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/asus/flo/mrom_infos
 MR_USE_QCOM_OVERLAY := true
-
-BUILD_OLD_SYS_PROPS := true
-COMMON_GLOBAL_CFLAGS += -DBUILD_OLD_SYS_PROPS
