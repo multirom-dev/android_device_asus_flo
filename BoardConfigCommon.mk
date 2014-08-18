@@ -134,3 +134,4 @@ MR_FSTAB := device/asus/flo/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/asus/flo/mrom_infos
 MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := device/asus/flo/mr_qcom_overlay.h
