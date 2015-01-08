@@ -68,7 +68,7 @@ TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITON := true
 
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_flo
 
 # Enable dex-preoptimization to speed up first boot sequence
@@ -154,6 +154,7 @@ EXTENDED_FONT_FOOTPRINT := true
 
 #TWRP config:
 DEVICE_RESOLUTION := 1200x1920
+LANDSCAPE_RESOLUTION := 1920x1200
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_USB_STORAGE := true
@@ -166,3 +167,16 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.591617/leds/lcd-backlight/bri
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/flo/custombootimg.mk
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/asus/flo/mr_init_devices.c
+MR_RD_ADDR := 0x82500000
+MR_DPI := xhdpi
+MR_DPI_FONT := 323
+MR_FSTAB := device/asus/flo/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_INFOS := device/asus/flo/mrom_infos
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := device/asus/flo/mr_qcom_overlay.h
