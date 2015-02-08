@@ -16,3 +16,4 @@
 /rpmb       emmc    /dev/block/platform/msm_sdcc.1/by-name/rpmb
 /abootb     emmc    /dev/block/platform/msm_sdcc.1/by-name/abootb
 /usb-otg    vfat    /dev/block/sda1     /dev/block/sda  flags=removable;storage;display=USB-OTG
+/persist ext4 /dev/block/platform/msm_sdcc.1/by-name/persist
