@@ -37,5 +37,10 @@ const char *mr_init_devices[] =
     // for qualcomm overlay - /dev/ion
     "/sys/devices/virtual/misc/ion",
 
+    // Encryption
+    "/sys/devices/virtual/misc/device-mapper",
+    "/sys/devices/virtual/qseecom/qseecom",
+    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p29", // metadata
+
     NULL
 };

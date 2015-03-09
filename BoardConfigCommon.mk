@@ -171,7 +171,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/asus/flo/custombootimg.mk
 
 #MultiROM config. MultiROM also uses parts of TWRP config
 MR_INPUT_TYPE := type_b
-MR_INIT_DEVICES := device/asus/flo/mr_init_devices.c
+MR_INIT_DEVICES := device/asus/flo/multirom/mr_init_devices.c
 MR_RD_ADDR := 0x82500000
 MR_DPI := xhdpi
 MR_DPI_FONT := 323
@@ -179,7 +179,9 @@ MR_FSTAB := device/asus/flo/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/asus/flo/mrom_infos
 MR_USE_QCOM_OVERLAY := true
-MR_QCOM_OVERLAY_HEADER := device/asus/flo/mr_qcom_overlay.h
-MR_DEVICE_HOOKS := device/asus/flo/mr_hooks.c
+MR_QCOM_OVERLAY_HEADER := device/asus/flo/multirom/mr_qcom_overlay.h
+MR_DEVICE_HOOKS := device/asus/flo/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 5
 MR_DEVICE_VARIANTS := deb
+MR_ENCRYPTION := true
+MR_ENCRYPTION_SETUP_SCRIPT := device/asus/flo/multirom/mr_cp_crypto.sh
