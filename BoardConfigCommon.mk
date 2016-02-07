@@ -185,3 +185,4 @@ MR_DEVICE_HOOKS_VER := 5
 MR_DEVICE_VARIANTS := deb
 MR_ENCRYPTION := true
 MR_ENCRYPTION_SETUP_SCRIPT := device/asus/flo/multirom/mr_cp_crypto.sh
+TARGET_RECOVERY_IS_MULTIROM := true
