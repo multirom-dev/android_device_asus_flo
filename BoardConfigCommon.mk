@@ -186,3 +186,16 @@ MR_DEVICE_VARIANTS := deb
 MR_ENCRYPTION := true
 MR_ENCRYPTION_SETUP_SCRIPT := device/asus/flo/multirom/mr_cp_crypto.sh
 TARGET_RECOVERY_IS_MULTIROM := true
+
+# Custom Flags
+MR_NO_KEXEC := true
+MR_DEVICE_SPECIFIC_VERSION := b
+TW_THEME := portrait_hdpi
+
+include device/common/version-info/MR_REC_VERSION.mk
+
+ifeq ($(MR_REC_VERSION),)
+MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
+endif
+
+BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)
